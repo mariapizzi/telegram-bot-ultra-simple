@@ -5,7 +5,7 @@ import base64
 from io import BytesIO
 
 # Configuración básica - usar variables de entorno
-TOKEN_BOT = os.getenv("TOKEN_BOT", "8251615729:AAHu8lG5zxycBtqpu3iV_QZxReEEIkorRrc")
+TOKEN_BOT = os.getenv("TOKEN_BOT", "8843641416:AAHdY2FDGONTs8rBvDcPHUXbr5buw5DPZks")
 BASE_URL = f"https://api.telegram.org/bot{TOKEN_BOT}"
 requests.get(f"{BASE_URL}/deleteWebhook")
 
