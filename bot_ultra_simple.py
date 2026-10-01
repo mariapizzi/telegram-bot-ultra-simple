@@ -7,6 +7,7 @@ from io import BytesIO
 # Configuración básica - usar variables de entorno
 TOKEN_BOT = os.getenv("TOKEN_BOT", "8251615729:AAHu8lG5zxycBtqpu3iV_QZxReEEIkorRrc")
 BASE_URL = f"https://api.telegram.org/bot{TOKEN_BOT}"
+requests.get(f"{BASE_URL}/deleteWebhook")
 
 # Configuración de la API para consultas
 APIKEY = os.getenv("APIKEY", "1d5b57a92e0a42a69d944cdf68b86d12")
