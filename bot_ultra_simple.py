@@ -25,6 +25,7 @@ def send_message(chat_id, text):
         "parse_mode": "HTML"
     }
     response = requests.post(url, data=data)
+    print(f"Telegram getUpdates: {response.status_code} - {response.json().get('error_code')}")
     return response.json()
 
 def get_updates(offset=None):
