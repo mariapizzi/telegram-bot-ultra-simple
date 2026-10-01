@@ -35,6 +35,7 @@ def get_updates(offset=None):
     if offset:
         params["offset"] = offset
     response = requests.get(url, params=params)
+    print(response.text)
     return response.json()
 
 def consultar_dni(dni):
