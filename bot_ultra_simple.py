@@ -19,6 +19,7 @@ BOLETO_API_URL = "http://localhost:5020"
 
 def send_message(chat_id, text):
     url = f"{BASE_URL}/sendMessage"
+    print("🔎 Intentando conectar con Telegram...")
     data = {
         "chat_id": chat_id,
         "text": text,
